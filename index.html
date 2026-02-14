@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player: for PC</title>
+    <link rel="icon" type="image/svg+xml" href="assets\favicon2.svg">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+<nav>
+    <div class="nav-box">
+        <div class="logo">
+            <img src="logo.png" alt="Brand-logo">
+        </div>
+
+
+        <ul class="link">
+            <li><img class="logo-home" src="assets/Home.svg" alt=""></li>
+            
+            <!-- <div class="search-bar">
+                <li><img class="logo-home" src="assets\search.svg" alt=""></li>
+                <input type="text" placeholder="What do you want to play">
+            </div> -->
+
+            <div class="search-bar">
+                <img class="search-icon" src="assets/search.svg" alt="">
+                <input type="text" placeholder="What do you want to play?">
+            </div>
+        </ul>
+    </div>
+</nav>
+
+    <!-- playlist -->
+
+<div class="play-container">
+    <div class="play-head flex">
+        <h1>Your Library</h1>
+
+        <button>Create</button>
+    </div>
+</div>
+
+
+<!-- CONTROLLER PANEL -->
+
+<div class="control-container">
+    <div class="one flex" style=" width: 25vw;">
+        <div class="music-banner">
+            <img class="lush-life-song" src="assets\lush-life-song.jpeg" alt="lush-life-song">
+        </div>
+        <div class="music-info">
+            <h3>Lush Life</h3>
+            <p>Zara Larsson</p>
+        </div>
+    </div>
+    <div class="two" style="width: 50vw; padding-bottom: 0.5rem;">
+        <div class="up flex center">
+            <img class="icon" src="assets\shuffle.svg" alt="shuffle">
+            <img class="icon" src="assets\backward.svg" alt="backward">
+            <img class="icon"  style="background-color: rgb(255, 255, 255); border-radius: 50%; display: flex; align-items: center; justify-content: center;" src="assets\play.svg" alt="play">
+            <img class="icon"  src="assets\forward.svg" alt="forward">
+            <img class="icon"  src="assets\repeat.svg" alt="repeat">
+
+        </div>
+        <div class="bottom center" style="width: 50vw;">
+            <input style="width: 45vw; height: 5px; margin-top: 1rem;" type="range" name="lush-life-song" min="0" max="100">
+        </div>
+    </div>
+    <div class="three"></div>
+</div>
+
+</body>
+</html>
