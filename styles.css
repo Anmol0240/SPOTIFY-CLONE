@@ -18,6 +18,11 @@ body{
     padding-left: 0.5rem;
 }
 
+.flex2{
+    display: flex;
+    align-items: center;
+}
+
 .center{
     display: flex;
     justify-content: center;
@@ -116,4 +121,16 @@ nav{
 
 .lush-life-song{
     height: 3rem;
+}
+
+.range{
+    padding-bottom: 0.5rem;
+
+}
+
+.three{
+    display: flex;
+    justify-content: flex-end;
+    width: 25vw;
+    margin-right: 1rem;
 }
