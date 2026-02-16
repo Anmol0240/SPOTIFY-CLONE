@@ -1,7 +1,9 @@
 body{
     background-color: rgb(0, 0, 0);
     color: white;
+    /* overflow: hidden;    */
 }
+
 
 *{
     
@@ -27,6 +29,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* item */
+
+.item {
+  background-color: #121212;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: flex-start; /* Align content to the left */
+  justify-content: flex-start; /* Align content to the top */
+  font-family: sans-serif;
+  border: 1px solid #282828;
+  box-sizing: border-box; /* Crucial for width calculation */
 }
 
 
@@ -94,19 +111,48 @@ nav{
     opacity: 0.7;
 }
 
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* HOME PAGE */
+
+/* .home-page{
+       position:absolute;
+    top:10vh;
+    bottom:10vh;
+    left:0;
+    right:0;
+
+    display:grid;
+    grid-template-columns:19vw 1fr 18vw;
+    gap:1rem;
+    padding:1rem;
+} */
+
+
+.home-page{
+display: flex;         
+    justify-content: center; 
+    align-items: center;    
+    gap: 1rem;             
+    height: 80vh;            
+    margin-top: 10vh;       
+    width: 100%;
+}
+
+
 /* PLAYLIST */
 
 
 
 .play-container{
-    background-color:rgb(18, 18, 18);
-    position: fixed;
-    width: 30vw;
-    height: 73vh;
-    margin:4rem 0rem  0rem 0.5rem;
+background-color: rgb(18, 18, 18);
+    width: 20vw;
+    min-width: 20vw;   
+    height: 100%;      
     border-radius: 1rem;
     padding: 1rem;
-    margin-top: 11vh;
+    box-sizing: border-box; 
 }
 
 .play-head{
@@ -127,7 +173,7 @@ nav{
     margin-top: 1rem;
     padding: 10px 20px;
     border-radius:50px;
-    width: 20vw;   /* adjust as needed */
+    width: 10vw;   /* adjust as needed */
 }
 
 .search-bar2 input{
@@ -139,6 +185,71 @@ nav{
     font-size: 16px;
     width: 100%;
 }
+
+
+/* EXPLORE MUSIC OR SONGS */
+
+.hero-container{
+background-color: rgb(18, 18, 18);
+    width: 60vw;
+    min-width: 55vw;   /* Keeps it at 50vw */
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+
+/* banner */
+
+
+.banner-container{
+background-color: rgb(18, 18, 18);
+    width: 20vw;
+    min-width: 20vw;   /* Keeps it at 20vw */
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.banner-container img{
+    width:5vw;
+}
+
+
+
+/* ///////////////////////////////////////////////// */
+
+.play-container, 
+.hero-container, 
+.banner-container {
+    position: relative;
+    margin: 0;         
+    height: 100%;       
+    padding: 20px;    
+}
+
+.play-container { width: 20vw; }
+.hero-container { width: 50vw; }
+.banner-container { width: 20vw; }
+
+
+/* ///////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* CONTROLLER CONTAINER */
