@@ -24,7 +24,8 @@
 
             <div class="search-bar">
                 <img class="search-icon" src="assets/search.svg" alt="">
-                <input type="text" placeholder="What do you want to play?">
+                <input type="text" id="mainSearch" placeholder="What do you want to play?">
+
             </div>
         </ul>
     </div>
@@ -53,7 +54,8 @@
     <div class="head2">
         <div class="search-bar2">
                 <img class="search-icon" src="assets/search.svg" alt="">
-                <input type="text" placeholder="search in library">
+                <input type="text" id="librarySearch" placeholder="search in library">
+
         </div>
     </div>
 </div>
@@ -66,33 +68,189 @@
         <!-- Buttons -->
 <div class="hero-container item">
     <div class="hero-upper">
-        <button class="btn01">All</button>
-        <button class="btn01">Music</button>
+        <button class="btn01" id="btn-all">All</button>
+        <button class="btn01" id="btn-music">Music</button>
     </div>
 
 
             <!-- Header-songs -->
-    <div class="hero-songs">
-    <div class="h-up">
-        <div class="hero-s01 h-divs">
-        <img class="H-img" src="assets\50-global.jpg" alt="">
-        <h4 class="h4-s01">Top 50-Global</h4>
+    <div class="hero-scroll">
+        <div class="hero-songs" id="heroSongs">
+        <div class="h-up">
+            <div class="hero-s01 h-divs">
+            <img class="H-img" src="assets\50-global.jpg" alt="">
+            <h4 class="h4-s01">Top 50-Global</h4>
+            </div>
+            <div class="hero-s02 h-divs">
+            <img class="H-img"src="assets\all-ok.jpeg" alt="">
+            <h4 class="h4-s01">All OK</h4>
+            </div>
         </div>
-        <div class="hero-s02 h-divs">
-        <img class="H-img"src="assets\all-ok.jpeg" alt="">
-        <h4 class="h4-s01">All OK</h4>
+        <div class="h-bot">
+            <div class="hero-s03 h-divs ">
+            <img class="H-img"src="assets\daily-mix.JPEG" alt="">
+            <h4 class="h4-s01">Daily Mix3</h4>
+            </div>
+            <div class="hero-s04 h-divs">
+            <img class="H-img"src="assets\phonk.jpeg" alt="">
+            <h4 class="h4-s01">Phonk</h4>
+            </div>
         </div>
-    </div>
-    <div class="h-bot">
-        <div class="hero-s03 h-divs ">
-        <img class="H-img"src="assets\daily-mix.JPEG" alt="">
-        <h4 class="h4-s01">Daily Mix3</h4>
         </div>
-        <div class="hero-s04 h-divs">
-        <img class="H-img"src="assets\phonk.jpeg" alt="">
-        <h4 class="h4-s01">Phonk</h4>
+
+        <div class="song-grid">
+            <div class="song-card" data-audio="assets\audio\Sahiba.mp3">
+                <img src="assets\songs\01.jpeg" alt="">
+                <h4 class="song-title">Song 01</h4>
+                <p class="song-artist">Artist 01</p>
+            </div>
+            <div class="song-card" data-audio="assets\audio\Finding Her.mp3">
+                <img src="assets\songs\02.jpeg" alt="">
+                <h4 class="song-title">Song 02</h4>
+                <p class="song-artist">Artist 02</p>
+            </div>
+            <div class="song-card" data-audio="assets\audio\Mann Mera.mp3">
+                <img src="assets\songs\03.jpeg" alt="">
+                <h4 class="song-title">Song 03</h4>
+                <p class="song-artist">Artist 03</p>
+            </div>
+            <div class="song-card" data-audio="assets\audio\Haseen.mp3">
+                <img src="assets\songs\04.jpeg" alt="">
+                <h4 class="song-title">Song 04</h4>
+                <p class="song-artist">Artist 04</p>
+            </div>
+            <div class="song-card" data-audio="assets\audio\Samjho Na.mp3">
+                <img src="assets\songs\05.jpeg" alt="">
+                <h4 class="song-title">Song 05</h4>
+                <p class="song-artist">Artist 05</p>
+            </div>
+            <div class="song-card" data-audio="assets\audio\For A Reason.mp3">
+                <img src="assets\songs\06.jpeg" alt="">
+                <h4 class="song-title">Song 06</h4>
+                <p class="song-artist">Artist 06</p>
+            </div>
+            <div class="song-card" data-audio="assets\audio\Lush Life.mp3">
+                <img src="assets\songs\07.jpeg" alt="">
+                <h4 class="song-title">Song 07</h4>
+                <p class="song-artist">Artist 07</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\08.jpeg" alt="">
+                <h4 class="song-title">Song 08</h4>
+                <p class="song-artist">Artist 08</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\09.jpeg" alt="">
+                <h4 class="song-title">Song 09</h4>
+                <p class="song-artist">Artist 09</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\10.jpeg" alt="">
+                <h4 class="song-title">Song 10</h4>
+                <p class="song-artist">Artist 10</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\11.jpeg" alt="">
+                <h4 class="song-title">Song 11</h4>
+                <p class="song-artist">Artist 11</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\12.jpeg" alt="">
+                <h4 class="song-title">Song 12</h4>
+                <p class="song-artist">Artist 12</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\13.jpeg" alt="">
+                <h4 class="song-title">Song 13</h4>
+                <p class="song-artist">Artist 13</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\14.jpeg" alt="">
+                <h4 class="song-title">Song 14</h4>
+                <p class="song-artist">Artist 14</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\15.jpeg" alt="">
+                <h4 class="song-title">Song 15</h4>
+                <p class="song-artist">Artist 15</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\16.jpeg" alt="">
+                <h4 class="song-title">Song 16</h4>
+                <p class="song-artist">Artist 16</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\17.jpeg" alt="">
+                <h4 class="song-title">Song 17</h4>
+                <p class="song-artist">Artist 17</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\18.jpeg" alt="">
+                <h4 class="song-title">Song 18</h4>
+                <p class="song-artist">Artist 18</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\19.jpeg" alt="">
+                <h4 class="song-title">Song 19</h4>
+                <p class="song-artist">Artist 19</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\20.jpeg" alt="">
+                <h4 class="song-title">Song 20</h4>
+                <p class="song-artist">Artist 20</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\21.jpeg" alt="">
+                <h4 class="song-title">Song 21</h4>
+                <p class="song-artist">Artist 21</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\22.jpeg" alt="">
+                <h4 class="song-title">Song 22</h4>
+                <p class="song-artist">Artist 22</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\23.jpeg" alt="">
+                <h4 class="song-title">Song 23</h4>
+                <p class="song-artist">Artist 23</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\24.jpeg" alt="">
+                <h4 class="song-title">Song 24</h4>
+                <p class="song-artist">Artist 24</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\25.jpeg" alt="">
+                <h4 class="song-title">Song 25</h4>
+                <p class="song-artist">Artist 25</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\26.jpeg" alt="">
+                <h4 class="song-title">Song 26</h4>
+                <p class="song-artist">Artist 26</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\27.jpeg" alt="">
+                <h4 class="song-title">Song 27</h4>
+                <p class="song-artist">Artist 27</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\28.jpeg" alt="">
+                <h4 class="song-title">Song 28</h4>
+                <p class="song-artist">Artist 28</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\29.jpeg" alt="">
+                <h4 class="song-title">Song 29</h4>
+                <p class="song-artist">Artist 29</p>
+            </div>
+            <div class="song-card" data-audio="">
+                <img src="assets\songs\30.jpeg" alt="">
+                <h4 class="song-title">Song 30</h4>
+                <p class="song-artist">Artist 30</p>
+            </div>
+
         </div>
-    </div>
     </div>
 </div>
 
@@ -121,27 +279,32 @@
 <!-- CONTROLLER PANEL -->
 
 <div class="control-container">
-    <div class="one flex" style=" width: 25vw;">
-        <div class="music-banner">
-            <img class="lush-life-song" src="assets\lush-life-song.jpeg" alt="lush-life-song">
-        </div>
-        <div class="music-info">
-            <h3>Lush Life</h3>
-            <p>Zara Larsson</p>
-        </div>
+    <div class="one flex" style="width: 25vw;">
+    <div class="music-banner" data-audio="assets\audio\Lush Life.mp3">
+        <img id="playerImage" class="lush-life-song" src="assets\songs\07.jpeg" alt="lush-life-song">
     </div>
+    <div class="music-info">
+        <h3 id="playerTitle">Lush Life</h3>
+        <p id="playerArtist">Zara Larsson</p>
+    </div>
+</div>
+
     
     <div class="two" style="width: 50vw; padding-bottom: 0.5rem;">
         <div class="up flex center">
             <img class="icon" src="assets\shuffle.svg" alt="shuffle">
             <img class="icon" src="assets\backward.svg" alt="backward">
-            <img class="icon"  style="background-color: rgb(255, 255, 255); border-radius: 50%; display: flex; align-items: center; justify-content: center;" src="assets\play.svg" alt="play">
+            <div class="play-btn">
+                <img id="playPauseBtn" class="icon" src="assets/play.svg" alt="play">
+            </div>
+
+
             <img class="icon"  src="assets\forward.svg" alt="forward">
             <img class="icon"  src="assets\repeat.svg" alt="repeat">
 
         </div>
         <div class="bottom center" style="width: 50vw;">
-            <input style="width: 30vw; height: 5px; margin-top: 1rem;" type="range" name="lush-life-song" min="0" max="100">
+            <input id="progressBar" type="range" min="0" max="100" value="0" step="1" style="width: 50%; height: 4px; background-color: #b3b3b3; border-radius: 2px; cursor: pointer; margin: 11px;">
         </div>
     </div>
     <div class="three flex" >
@@ -155,6 +318,13 @@
             </div>
     </div>
 </div>
+
+<audio id="audioPlayer"></audio>
+
+
+<!-- ////////////////////////////////////////////////SCRIPT FILE////////////////////////////////////////////////////////// -->
+
+<script src="script.js"></script>
 
 </body>
 </html>
